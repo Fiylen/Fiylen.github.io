@@ -1,0 +1,54 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Фиксированный подвал</title>
+  <style type="text/css">
+   BODY { margin-bottom: 50px; }
+   #footer {
+    position: fixed; /* Фиксированное положение */
+    left: 0; bottom: 0; /* Левый нижний угол */
+    padding: 10px; /* Поля вокруг текста */
+    background: #39b54a; /* Цвет фона */
+    color: #fff; /* Цвет текста */
+    width: 100%; /* Ширина слоя */
+   }
+  </style>
+ </head>
+ <body>
+  <div id="footer">&copy;<head>
+  <meta charset="utf-8">
+  <style>
+   #msg { 
+    color: #000;
+    display: none;
+    position: absolute;
+    width: 280px;
+    top: 200px;
+    left: 50%;
+    margin-left: -150px; 
+    background: #fc0;
+    padding: 10px;
+   }
+  </style>
+  <script>
+   function textMsg(msg) {
+    document.getElementById('text').innerHTML = msg;
+    document.getElementById('msg').style.display = 'block';
+   }
+   function closeMsg() {
+    document.getElementById('msg').style.display = 'none';
+   }
+  </script>
+ </head>
+ <body>
+  <div id="msg">
+   <div id="text"></div>
+   <div id="close"><a href="javascript:closeMsg()">[Закрыть]</a></div>
+  </div>
+  <p><center>Нажмите на <a href="#" onclick="textMsg('Создатель сайта Евгений Хомка <big> Vk.com/Evxomka </big>')">  
+    ссылку для того, чтобы узнать Создателя</a>.</center></p>
+ </body>
+<head>
+       </div>
+ </body>
+</html>
